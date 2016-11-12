@@ -1,0 +1,4 @@
+1: Change CONTACT and ABOUT to CONTACT US and ABOUT US
+2: Create mobile site
+3: Fill pages with information
+4: Get domain name

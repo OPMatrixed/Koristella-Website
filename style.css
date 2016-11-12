@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&text=ABCDEFGHIJKLMNOPQRSTUVWXYZ');
+
+html,body {
+	font-family: 'Cormorant Garamond', sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	color:rgb(80,80,80);
+}
+
+@media only screen and (max-width: 835px) {
+	.show-mobile {	display: block; }
+	.hide-mobile {	display: none;	}
+}
+@media only screen and (min-width: 836px) {
+	.show-mobile {	display: none;	}
+	.hide-moblie {	display: block;	}
+}
+@media only screen and (max-width: 980px) {
+	font-size:20px;
+}
+@media only screen and (min-width: 836px) {
+	#header {
+		font-family: 'Cormorant Garamond', sans-serif;
+		font-size:48px;
+		
+		width:calc(100% - 50px);
+		padding:25px;
+	}
+	#logo {
+		max-width: 344px;
+		width: calc(100% - 576px);
+		max-height: 100px;
+		float:left;
+		color: black;
+	}
+	#navbar .selected {
+		color:rgb(0,0,0);
+	}
+	#navbar {
+		float:right;
+		text-align:right;
+		/*width:calc(60% - 10px);*/
+		min-width: 546px;
+		font-size:24px;
+		padding:20px;
+		padding-top:26px;
+	}
+	.navbutton {
+		float:left;
+		padding:5px;
+		padding-right:2px;
+		padding-left:20px;
+		text-align: center;
+	}
+	#navbar a {
+		color:rgb(80,80,80);
+		text-decoration:none;
+	}
+	#navbar a:hover{
+		color:rgb(0,0,0);
+	}
+	
+	#page {
+		margin:100px;
+		margin-top: 120px;
+		
+	}
+	#content {
+		padding: 30px;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 835px) {
+	#logo {
+		max-height:180px;
+		max-width: calc(100% - 40px);
+		margin: 20px;
+		margin-bottom: 4px;
+	}
+	#navbar {
+		
+	}
+	.navbutton {
+		margin-top: 10px;
+		font-size: 28px;
+		padding: 10px;
+		width: calc(100% - 20px);
+	}
+	.navbtn {
+		width: 100%;
+		float:left;
+		text-align: center;
+		padding: 5px;
+	}
+	#navbar .selected {
+		color:rgb(0,0,0);
+	}
+	#navbar a {
+		color:rgb(80,80,80);
+		text-decoration:none;
+		text-align: center;
+	}
+	#navbar a center{
+		padding-top:10px;
+	}
+	#navbar a:hover{
+		color:rgb(0,0,0);
+	}
+	
+	#content {
+		padding: 30px;
+		text-align: center;
+	}
+	#cbar {
+		margin-left: 10%;
+		margin-top: 168px;
+		width: 80%;
+		height: 1px;
+		background-color: rgba(150,150,150,170);
+	}
+}
