@@ -1,9 +1,12 @@
-<html>
+<html> 
 	<head>
 		<title>About us - Koristella</title>
-		<meta property="og:title" content="About us - Koristella" />
-		<meta property="og:url" content="http://www.koristella.co.uk/" />
-		<meta property="og:image" content="http://www.koristella.co.uk/Kfavicon.png" />
+		<meta property="og:title" content="Koristella">
+		<meta property="og:url" content="http://www.koristella.co.uk/">
+		<meta property="og:image" content="http://www.koristella.co.uk/Kfavicon.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 		<meta name="description" content="Koristella is a Young Enterprise company, and we make seasonal home decor products.">
 		<meta name="keywords" content="koristella,ye,young enterprise,company,haybridge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +24,23 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
 		<script type="text/javascript" src="/jquery.js"></script>
 		<script type="text/javascript" src="/mainscript.js"></script>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-47874260-4', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
 		<link rel="stylesheet" type="text/css" href="/style.css">
 	</head>
 	<body onload="fixIt();">
 		<div id="header">
-			<image id="logo" src="/koristellalogowithback.png"/>
+			<img id="logo" src="/koristellalogowithback.png" alt="Koristella Logo">
 			<div id="navbar">
 				<div class="navbtn" style="padding-top:0px;">
 				<a class="navbutton" href="/">
@@ -63,19 +73,17 @@
 		</div>
 		<div id="footer" class="show-mobile">
 			TAP TO FIND US ON:&nbsp;
-			<a onclick="setTimeout(function () { window.location = 'https://www.facebook.com/KoristellaYE/'; }, 100); window.location = 'fb://page/214105899014602';"><img src="/facebook.png" class="socialbutton"/></a>
+			<a onclick="setTimeout(function () { window.location = 'https://www.facebook.com/KoristellaYE/'; }, 100); window.location = 'fb://page/214105899014602';"><img src="/facebook.png" alt="Facebook Logo" class="socialbutton"/></a>
 			&nbsp;AND&nbsp;
-			<a onclick="setTimeout(function () { window.location = 'https://www.instagram.com/koristella_'; }, 100); window.location = 'instagram://user?username=koristella_';"><img src="/instagram.jpg" class="socialbutton"/></a>
+			<a onclick="setTimeout(function () { window.location = 'https://www.instagram.com/koristella_'; }, 100); window.location = 'instagram://user?username=koristella_';"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
 			&nbsp;
-			</span>
 		</div>
 		<div id="footer" class="hide-mobile">
 			CLICK TO FIND US ON:&nbsp;
-			<a href="https://www.facebook.com/KoristellaYE/" target="_blank"><img src="/facebook.png" class="socialbutton"/></a>
+			<a href="https://www.facebook.com/KoristellaYE/" target="_blank"><img src="/facebook.png" alt="Facebook logo" class="socialbutton"/></a>
 			&nbsp;AND&nbsp;
-			<a href="https://www.instagram.com/koristella_/"><img src="/instagram.jpg" class="socialbutton"/></a>
+			<a href="https://www.instagram.com/koristella_/"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
 			&nbsp;
-			</span>
 		</div>
 	</body>
 </html>
