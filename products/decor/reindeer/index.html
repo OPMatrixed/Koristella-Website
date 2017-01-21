@@ -1,6 +1,6 @@
 <html> 
 	<head>
-		<title>Contact us - Koristella</title>
+		<title>Reindeer Decoration - Products - Koristella</title>
 		<meta property="og:title" content="Koristella">
 		<meta property="og:url" content="http://www.koristella.co.uk/">
 		<meta property="og:image" content="http://www.koristella.co.uk/Kfavicon.png">
@@ -25,7 +25,7 @@
 		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/manifest.json">
-		<script async type="text/javascript" src="/jquery.js"></script>
+		<script type="text/javascript" src="/jquery.js"></script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -34,7 +34,20 @@
 
 		  ga('create', 'UA-47874260-4', 'auto');
 		  ga('send', 'pageview');
-
+		</script>
+		<script>
+		$(document).ready(function(){
+			var enlarge = function(){
+				$("#overlay").show();
+				$("#enlargedimage").attr("src",$(this).attr("src"));
+			}
+			var hideover = function(){
+				$("#overlay").hide();
+			}
+			$(".p").click(enlarge);
+			$("#overlay").click(hideover);
+			$("#enlargedimage").click(hideover);
+		});
 		</script>
 		<link rel="stylesheet" type="text/css" href="/style.css">
 	</head>
@@ -43,24 +56,24 @@
 			<img id="logo" src="/koristellalogowithback.png" alt="Koristella Logo">
 			<div id="navbar">
 				<div class="navbtn" style="padding-top:0px;">
-				<a class="navbutton" href="/">
-					HOME
-				</a>
+					<a class="navbutton" href="/">
+						HOME
+					</a>
 				</div>
 				<div class="navbtn">
-				<a class="navbutton" href="/products/">
-					PRODUCTS
-				</a>
+					<a class="navbutton selected" href="/products/">
+						PRODUCTS
+					</a>
 				</div>
 				<div class="navbtn">
-				<a class="navbutton" href="/about/">
-					ABOUT&nbsp;US
-				</a>
+					<a class="navbutton" href="/about/">
+						ABOUT&nbsp;US
+					</a>
 				</div>
 				<div class="navbtn">
-				<a class="navbutton selected" href="/contact/">
-					CONTACT&nbsp;US
-				</a>
+					<a class="navbutton" href="/contact/">
+						CONTACT&nbsp;US
+					</a>
 				</div>
 			</div>
 		</div>
@@ -68,24 +81,29 @@
 			<div id="cbar">
 			</div>
 			<div id="content">
-				<div id="title"><b>CONTACT US</b></div>
-				EMAIL: <a style="font-family: Helvetica, serif;" href="mailto:koristella1@gmail.com">koristella1@gmail.com</a>
-				<h2>SOCIAL</h2>
-				<div class="hide-mobile">CLICK THE IMAGES BELOW TO FOLLOW THE LINKS</div>
-				<div class="show-mobile">TAP THE IMAGES BELOW TO FOLLOW THE LINKS</div>
-				<br>
-				<div id="applinks" class="show-mobile">
-					IN-APP (ONLY WORKS IF INSTALLED):<br>
-					<a href="fb://page/214105899014602"><img src="/facebook.png" alt="Facebook Logo" class="socialbuttonlarge"/></a>
-					&nbsp;
-					<a href="instagram://user?username=koristella_"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbuttonlarge"/></a>
+				<div id="title">REINDEER DECORATION</div>
+				<div id="infopane">
+					<div id="price">
+						&pound;0.00
+					</div>
+					PRODUCT DESCRIPTION GOES HERE
 				</div>
-				<div id="applinks">
-					IN-BROWSER LINKS:<br>
-					<a href="https://www.facebook.com/KoristellaYE/" target="_blank"><img src="/facebook.png" alt="Facebook logo" class="socialbuttonlarge"/></a>
-					&nbsp;
-					<a href="https://www.instagram.com/koristella_/"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbuttonlarge"/></a>
+				<div id="photopane">
+					<div class="hide-mobile">CLICK AN IMAGE TO ENLARGE</div>
+					<div class="show-mobile">TAP AN IMAGE TO ENLARGE</div>
+					<div class="grid">
+						<div class="column">
+							<img src="1.jpg" alt="Picture 1" class="p">
+							<!--<img src="2.jpg" alt="Picture 2" class="p">-->
+						</div>
+						<div class="column">
+							<!--<img src="3.jpg" alt="Picture 3" class="p">
+							<img src="4.jpg" alt="Picture 4" class="p">-->
+						</div>
+						<div style="clear:both;"></div>
+					</div>
 				</div>
+				<div style="clear: both;"></div>
 			</div>
 		</div>
 		<div id="footer" class="show-mobile">
@@ -102,5 +120,6 @@
 			<a href="https://www.instagram.com/koristella_/"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
 			&nbsp;
 		</div>
+		<div id="overlay" style="display: none;"><span class="helper"></span><img id="enlargedimage" src="" alt="Enlarged image"></div>
 	</body>
 </html>
