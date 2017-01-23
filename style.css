@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%C2%A3');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%C2%A3\'%2E');
 
 html,body {
 	font-family:                 'Cormorant Garamond', sans-serif;
