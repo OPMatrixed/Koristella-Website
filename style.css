@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%C2%A3\'%2E');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&text=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789%C2%A3\'%26%2E');
 
 html,body {
 	font-family:                 'Cormorant Garamond', sans-serif;
@@ -120,7 +120,10 @@ html,body {
 		text-align: left;
 	}
 	#price {
-		font-size:  28px;
+		font-size: 28px;
+	}
+	#postage {
+		font-size: 18px;
 	}
 	#photopane img {
 		width:   calc(100% - 10px);
@@ -269,6 +272,9 @@ html,body {
 	}
 	#price {
 		font-size:  24px;
+	}
+	#postage {
+		font-size: 18px;
 	}
 	#photopane img {
 		width:   calc(100% - 10px);
