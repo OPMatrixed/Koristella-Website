@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
 	<head>
-		<title>Coasters - Products - Koristella</title>
+		<title>Snowflake Coaster - Products - Koristella</title>
 		<meta charset="UTF-8">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="/Koristella-Website/ms-icon-144x144.png">
@@ -25,28 +25,42 @@
 		<link rel="manifest" href="/Koristella-Website/manifest.json">
 		<script type="text/javascript" src="/Koristella-Website/jquery.js"></script>
 		<link rel="stylesheet" type="text/css" href="/Koristella-Website/style.css">
+		<script>
+		$(document).ready(function(){
+			var enlarge = function(){
+				$("#overlay").show();
+				$("#enlargedimage").attr("src",$(this).attr("src"));
+			}
+			var hideover = function(){
+				$("#overlay").hide();
+			}
+			$(".p").click(enlarge);
+			$("#overlay").click(hideover);
+			$("#enlargedimage").click(hideover);
+		});
+		</script>
 	</head>
 	<body>
 		<div id="header">
-			<img id="logo" src="/Koristella-Website/koristellalogowithback.png" alt="Koristella Logo">
+			<img id="logo" src="/koristellalogowithback.png" alt="Koristella Logo">
 			<div id="navbar">
 				<div class="navbtn" style="padding-top:0px;">
-					<a class="navbutton" href="/Koristella-Website/">
+					<a class="navbutton" href="/">
 						HOME
 					</a>
 				</div>
 				<div class="navbtn">
-					<a class="navbutton selected" href="/Koristella-Website/products/">
+					<a class="navbutton selected" href="/products/">
 						PRODUCTS
 					</a>
 				</div>
 				<div class="navbtn">
-					<a class="navbutton" href="/Koristella-Website/about/">
+					<a class="navbutton" href="/about/">
 						ABOUT&nbsp;US
 					</a>
 				</div>
 				<div class="navbtn">
-					<a class="navbutton" href="/Koristella-Website/contact/">
+					<a class="navbutton" href="/contact/">
 						CONTACT&nbsp;US
 					</a>
 				</div>
@@ -56,48 +70,48 @@
 			<div id="cbar">
 			</div>
 			<div id="content">
-				<div id="title">PRODUCTS - COASTERS</div>
-				<div class="show-mobile">TAP A PRODUCT TO VIEW DETAILS</div>
-				<div class="hide-mobile">CLICK A PRODUCT TO VIEW DETAILS</div>
-				<div class="product">
-					<a href="/Koristella-Website/products/coasters/love/">
-						<img src="/Koristella-Website/products/coasters/love/1.jpg" alt="LOVE COASTER">
-						<div>LOVE COASTER</div>
-					</a>
-				<div class="product">
-					<a href="/Koristella-Website/products/coasters/stag/">
-						<img src="/Koristella-Website/products/coasters/stag/1.jpg" alt="STAG COASTER">
-						<div>STAG COASTER</div>
-					</a>
+				<div id="title">SET OF FOUR SNOWFLAKE COASTERS</div>
+				<div id="infopane">
+					<div id="price">
+						Set of four<span style="font-family: none;">:</span> &pound;6.99<br>
+					</div>
+					<div id="postage" title="Postage &amp; Packing">P&amp;P: &pound;2.99
+					</div>
+					A set of four wooden snowflake coasters.<br>
+					<br>
 				</div>
-				<div class="product">
-					<a href="/Koristella-Website/products/coasters/home/">
-						<img src="/Koristella-Website/products/coasters/home/1.jpg" alt="HOME COASTER">
-						<div>HOME COASTER</div>
-					</a>
-				</div>
-				<div class="product">
-					<a href="/Koristella-Website/products/coasters/snowflake/">
-						<img src="/Koristella-Website/products/coasters/snowflake/1.jpg" alt="SNOWFLAKE COASTER">
-						<div>SNOWFLAKE COASTER</div>
-					</a>
+				<div id="photopane">
+					<div class="hide-mobile">CLICK AN IMAGE TO ENLARGE</div>
+					<div class="show-mobile">TAP AN IMAGE TO ENLARGE</div>
+					<div class="grid">
+						<div class="column">
+							<img src="1.jpg" alt="Picture 1" class="p">
+							<img src="2.jpg" alt="Picture 2" class="p">
+						</div>
+						<div class="column">
+							<img src="3.jpg" alt="Picture 3" class="p">
+							<img src="4.jpg" alt="Picture 4" class="p">
+						</div>
+						<div style="clear:both;"></div>
+					</div>
 				</div>
 				<div style="clear: both;"></div>
 			</div>
 		</div>
 		<div id="footer" class="show-mobile">
 			TAP TO FIND US ON:&nbsp;
-			<a onclick="setTimeout(function () { window.location = 'https://www.facebook.com/KoristellaYE/'; }, 100); window.location = 'fb://page/214105899014602';"><img src="/Koristella-Website/facebook.png" alt="Facebook Logo" class="socialbutton"/></a>
+			<a onclick="setTimeout(function () { window.location = 'https://www.facebook.com/KoristellaYE/'; }, 100); window.location = 'fb://page/214105899014602';"><img src="/facebook.png" alt="Facebook Logo" class="socialbutton"/></a>
 			&nbsp;AND&nbsp;
-			<a onclick="setTimeout(function () { window.location = 'https://www.instagram.com/koristella_'; }, 100); window.location = 'instagram://user?username=koristella_';"><img src="/Koristella-Website/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
+			<a onclick="setTimeout(function () { window.location = 'https://www.instagram.com/koristella_'; }, 100); window.location = 'instagram://user?username=koristella_';"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
 			&nbsp;
 		</div>
 		<div id="footer" class="hide-mobile">
 			CLICK TO FIND US ON:&nbsp;
-			<a href="https://www.facebook.com/KoristellaYE/" target="_blank"><img src="/Koristella-Website/facebook.png" alt="Facebook logo" class="socialbutton"/></a>
+			<a href="https://www.facebook.com/KoristellaYE/" target="_blank"><img src="/facebook.png" alt="Facebook logo" class="socialbutton"/></a>
 			&nbsp;AND&nbsp;
-			<a href="https://www.instagram.com/koristella_/"><img src="/Koristella-Website/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
+			<a href="https://www.instagram.com/koristella_/"><img src="/instagram.jpg" alt="Instagram Logo" class="socialbutton"/></a>
 			&nbsp;
 		</div>
+		<div id="overlay" style="display: none;"><span class="helper"></span><img id="enlargedimage" src="" alt="Enlarged image"></div>
 	</body>
 </html>
